@@ -7,10 +7,13 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<title></title>
+	<?php includePartial('head'); ?>
 </head>
 <body>
-	<?php includePartial('header'); ?>
-	body
+	<? includePartial('sidebar'); ?>
+	
+	<div id="right-panel" class="right-panel">
+		<? includePartial('header'); ?>
+	</div>
 </body>
 </html>
