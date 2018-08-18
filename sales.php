@@ -1,15 +1,8 @@
-<?php
-    function includePartial($partial) {
-        foreach (glob("partials/".$partial."*.php") as $filename) {
-            include $filename;
-        }
-    }
-    ?>
 <!doctype html>
 <head>
     <?php include "partials/head.php"; ?>
 </head>
-<body>
+<body class="sales">
     <?php include "partials/sidebar.php"; ?> 
     <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
@@ -798,14 +791,53 @@
             </div>
             <!-- =============================================================================================================================FOURTH TAB-->
             <div class="tab-pane fade show" id="extra" role="tabpanel" aria-labelledby="extra-tab">
-                <h3>Products and Services</h3>
+                <div class="col-md-12 mb-4 p-0">
+                    <h3 class="float-left">Products and Services</h3>
+                    <div class="d-inline-flex float-right">
+                        <!-- <button class="btn btn-outline-secondary bg-white text-secondary rounded mr-2">Run Report</button> -->
+                        <select class="rounded p-1">
+                            <option class="bg-white text-dark">More</option>
+                            <option class="bg-white text-dark">Manage Categories</option>
+                            <option class="bg-white text-dark">Run Report</option>
+                        </select>
+                        <select class="bg-success rounded text-white ml-2">
+                            <option class="bg-white text-dark">New</option>
+                            <option class="bg-white text-dark">Import</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-12 bg-white">
+                    <div class="col-md-6">
+                        <div class=" center-content my-3">
+                            <img src="assets/images/lowstock.png" class="w-25 h-25">
+                            <div class="d-inline-flex">
+                                <h5 class="ml-2 text-orange">0</h5>
+                                <h5 class="ml-1">LOW STOCK</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class=" center-content my-3">
+                            <img src="assets/images/nostock.png" class="w-25 h-25">
+                            <div class="d-inline-flex">
+                                <h5 class="ml-2 text-red">0</h5>
+                                <h5 class="ml-1">NO STOCK</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                
                 <div id="table" class="table-editable">
                     <!-- Button trigger modal -->
                     <!-- <span class="table-add float-right mb-3 mr-2"><button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#staticModal">New Rule</button></span> -->
-                    <div class="col-md-12 p-0 my-2">
-                        <input type="text" name="" placeholder="Find products and services" class="font12">
-                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#filterModal">Filter</button>
-                        <div class="d-inline-flex float-right">
+                    <div class="col-md-12 p-0 py-2 my-2">
+                        <input type="text" name="" placeholder="Find products and services" class="font12 p-2">
+                        <button type="button" class="btn btn-secondary mb-1 p-2 fa fa-filter rounded" data-toggle="modal" data-target="#filterModal"></button>
+                        <div class="d-inline-flex float-right py-2">
                             <li class="fa fa-print pl-2"><a href=""></a></li>
                             <li class="fa fa-save pl-2"><a href=""></a></li>
                             <li class="fa fa-cog pl-2"><a href=""></a></li>
@@ -857,8 +889,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                                    <button type="button" class="btn btn-success">Apply</button>
+                                    <button type="button" class="float-left rounded btn btn-secondary" data-dismiss="modal">Reset</button>
+                                    <button type="button" class="rounded btn btn-success">Apply</button>
                                 </div>
                             </div>
                         </div>

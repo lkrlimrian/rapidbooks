@@ -1,10 +1,3 @@
-<?php
-    function includePartial($partial) {
-        foreach (glob("partials/".$partial."*.php") as $filename) {
-            include $filename;
-        }
-    }
-    ?>
 <!doctype html>
 <head>
     <?php include "partials/head.php"; ?>
