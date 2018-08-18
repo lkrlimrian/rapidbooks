@@ -1,19 +1,53 @@
 <?php
-	function includePartial($partial) {
-		foreach (glob("partials/".$partial."*.php") as $filename) {
-		    include $filename;
-		}
-	}
-?>
-<!DOCTYPE html>
+    function includePartial($partial) {
+        foreach (glob("partials/".$partial."*.php") as $filename) {
+            include $filename;
+        }
+    }
+    ?>
+<!doctype html>
 <head>
-	<?php includePartial('head'); ?>
+    <?php include "partials/head.php"; ?>
 </head>
 <body>
-	<? includePartial('sidebar'); ?>
-	
-	<div id="right-panel" class="right-panel">
-		<? includePartial('header'); ?>
-	</div>
+    <?php include "partials/sidebar.php"; ?> 
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <?php include "partials/header.php"; ?> 
+        </header>
+        <!-- Header-->
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Table</a></li>
+                            <li class="active">Basic table</li>
+                        </ol>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+            <!-- INSERT CONTECT HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+    </div><!-- /#right-panel -->
+    <!-- Right Panel -->
+
+
+    
+    <?php include "partials/footer.php"; ?>
+
 </body>
 </html>

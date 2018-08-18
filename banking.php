@@ -1,20 +1,23 @@
 <?php
     function includePartial($partial) {
-    	foreach (glob("partials/".$partial."*.php") as $filename) {
-    	    include $filename;
-    	}
+        foreach (glob("partials/".$partial."*.php") as $filename) {
+            include $filename;
+        }
     }
     ?>
-<!DOCTYPE html>
+<!doctype html>
 <head>
-    <?php includePartial('head'); ?>
+    <?php include "partials/head.php"; ?>
 </head>
 <body>
-    <? includePartial('sidebar'); ?>
-    
+    <?php include "partials/sidebar.php"; ?> 
+    <!-- Right Panel -->
     <div id="right-panel" class="right-panel">
-    	<? includePartial('header'); ?>
-    
+        <!-- Header-->
+        <header id="header" class="header">
+            <?php include "partials/header.php"; ?> 
+        </header>
+        <!-- Header-->
         <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
@@ -33,7 +36,7 @@
                         </ol>
                     </div>
                 </div>
-            </div> -->
+                </div> -->
         </div>
         <div class="card-body">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -200,5 +203,8 @@
             </div>
         </div>
     </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    <?php include "partials/footer.php"; ?>
 </body>
 </html>
