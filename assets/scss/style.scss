@@ -1822,3 +1822,25 @@ header .form-inline {
         }
     }
 }
+
+.taxes{
+
+    .subcap{
+        color: green;
+        font-size: .8rem;
+    }
+
+    .view-reports{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .status-message{
+        align-items: flex-start;
+
+        .status-icon{
+            width: 30px;
+            margin-right: 15px;
+        }
+    }
+}

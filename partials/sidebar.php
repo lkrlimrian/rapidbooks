@@ -19,7 +19,7 @@
                     <li><a href="sales.php"> <i class="menu-icon ti-bar-chart width30"></i>Sales</a></li>
                     <li><a href="expenses.php"> <i class="menu-icon ti-money width30"></i>Expenses</a></li>
                     <li><a href="reports.php"> <i class="menu-icon ti-files width30"></i>Reports</a></li>
-                    <li><a href="texes.php"> <i class="menu-icon ti-stats-up width30"></i>Taxes</a></li>
+                    <li><a href="taxes.php"> <i class="menu-icon ti-stats-up width30"></i>Taxes</a></li>
                     <li><a href="accounting.php"> <i class="menu-icon ti-receipt width30"></i>Accounting</a></li>
 
                     <h3 class="menu-title">Create</h3><!-- /.menu-title -->
