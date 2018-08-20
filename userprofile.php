@@ -42,108 +42,372 @@
         </ul>
         <div class="tab-content pl-3 p-1" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <!-- <h3>Sales Transactions</h3> -->
-
-                <div class="col-md-12 bg-white py-3 mt-2">
-                    <div class="col-md-4">
-                        <p class="font-weight-bold text-left m-0">Name</p>
-                    </div>
-                    <div class="col-md-4 text-left">
-                        <p class="m-0">John Doe</p>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <p class="text-info m-0">Edit</p>
-                    </div>
-                </div>
-
-                <div class="col-md-12 bg-white py-3 mt-2">
-                    <div class="col-md-4">
-                        <p class="font-weight-bold text-left m-0">User ID</p>
-                    </div>
-                    <div class="col-md-4 text-left">
-                        <p class="m-0">john.doe</p>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <p class="text-info m-0">Edit</p>
-                    </div>
-                </div>
-
-                <div class="col-md-12 bg-white py-3 mt-2">
-                    <div class="col-md-4">
-                        <p class="font-weight-bold text-left m-0">Email Address</p>
-                    </div>
-                    <div class="col-md-4 text-left d-inline-flex">
-                        <p class="m-0">john.doe@mail.com</p>
-                        <p class="text-success font12 m-0 ml-1">VERIFIED</p>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <p class="text-info m-0">Edit</p>
-                    </div>
-                </div>
-
-                <div class="col-md-12 bg-white py-3 mt-2">
-                    <div class="col-md-4">
-                        <p class="font-weight-bold text-left m-0">Address</p>
-                    </div>
-                    <div class="col-md-4 text-left">
-                        <p class="m-0">Sample Address</p>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <p class="text-info m-0">Edit</p>
-                    </div>
-                </div>
-
                 <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h5>
-    </div>
+                    <div class="card mb-2"> <!-- ONE -->
+                        <div class="card-header p-0 bg-white" id="headingTwo">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Name</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">John Doe</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">First Name</p>
+                                        <input class="ml-3 p-0 m-0" type="text" name="" value="John">
+                                    </div>
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">Last Name</p>
+                                        <input class="ml-3 p-0 m-0" type="text" name="" value="Doe">
+                                    </div>
+                                    <div class="col-md-2 d-inline-flex p-0">
+                                        <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Cancel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
+                    <div class="card mb-2"> <!-- TWO -->
+                        <div class="card-header p-0 bg-white" id="headingTwo">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">User ID</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">john.doe</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">User ID</p>
+                                        <input class="ml-3 p-0 m-0" type="text" name="" value="john.doe">
+                                    </div>
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">Password</p>
+                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
+                                    </div>
+                                    <div class="col-md-2 d-inline-flex p-0">
+                                        <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Cancel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="card mb-2"> <!-- THREE -->
+                        <div class="card-header p-0 bg-white" id="headingThree">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Email Address</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">john.doe@mail.com</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Email Address</p>
+                                        <input class="ml-3 p-0 m-0" type="email" name="" value="john.doe@gmail.com">
+                                    </div>
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Confirm Email</p>
+                                        <input class="ml-3 p-0 m-0" type="email" name="" value="">
+                                    </div>
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Password</p>
+                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
+                                    </div>
+                                </div>
 
+                                <div class="col-md-2 d-inline-flex p-0 float-right">
+                                    <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                    <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-2"> <!-- FOUR -->
+                        <div class="card-header p-0 bg-white" id="headingFour">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Address</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">Street, Street Address, City, State Zip Code, Country, Main</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">Street</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="Street"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Zip Code</p></div>
+                                    <div class="col-md-3 mb-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="90210"></div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">Street Address (Optional)</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="Street Address"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Country</p></div>
+                                    <div class="col-md-3 mb-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="United States"></div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">City</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="City"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Address Type</p></div>
+                                    <div class="col-md-3 mb-3">
+                                        <select class="mr-3 p-0 m-0 w-100">
+                                            <option>Main</option>
+                                            <option>Work</option>
+                                            <option>Home</option>
+                                            <option>Billing</option>
+                                            <option>Shipping</option>
+                                            <option>Purchase Order</option>
+                                            <option>E-Check</option>
+                                            <option>Other</option>
+                                            <option>No Address Type</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">State</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0  w-100" type="text" name="" value="California"></div>
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0"></p></div>
+                                    <div class="col-md-3 d-inline-flex mb-3">
+                                        <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Cancel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- ======================================================================================================================================== SECOND TAB--> 
+            <!-- ============================================================================================== SECOND TAB--> 
             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <!-- <h3>Sales Transactions</h3> -->
+                <div class="accordion" id="accordionExample">
+                    <div class="card mb-2"> <!-- FIVE -->
+                        <div class="card-header p-0 bg-white" id="headingFive">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Password</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">**********</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 p-0">
+
+                                    <div class="col-md-12">
+                                        <div class=" center-content my-3">
+                                            <p class="m-0">Current Password</p>
+                                            <input class="ml-3 p-0 m-0 float-right" type="password" name="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class=" center-content my-3">
+                                            <p class="m-0">New Password</p>
+                                            <input class="ml-3 p-0 m-0 float-right" type="password" name="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class=" center-content my-3">
+                                            <p class="m-0">Confrim New Password</p>
+                                            <input class="ml-3 p-0 m-0 float-right" type="password" name="" value="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-2 d-inline-flex p-0 float-right">
+                                    <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                    <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-2"> <!-- TWO -->
+                        <div class="card-header p-0 bg-white" id="headingTwo">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">User ID</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">john.doe</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">User ID</p>
+                                        <input class="ml-3 p-0 m-0" type="text" name="" value="john.doe">
+                                    </div>
+                                    <div class="col-md-5 d-inline-flex mb-3">
+                                        <p class="m-0">Password</p>
+                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
+                                    </div>
+                                    <div class="col-md-2 d-inline-flex p-0">
+                                        <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Cancel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-2"> <!-- THREE -->
+                        <div class="card-header p-0 bg-white" id="headingThree">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Email Address</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">john.doe@mail.com</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Email Address</p>
+                                        <input class="ml-3 p-0 m-0" type="email" name="" value="john.doe@gmail.com">
+                                    </div>
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Confirm Email</p>
+                                        <input class="ml-3 p-0 m-0" type="email" name="" value="">
+                                    </div>
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                        <p class="m-0">Password</p>
+                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 d-inline-flex p-0 float-right">
+                                    <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                    <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-2"> <!-- FOUR -->
+                        <div class="card-header p-0 bg-white" id="headingFour">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Address</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">Street, Street Address, City, State Zip Code, Country, Main</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Edit</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">Street</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="Street"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Zip Code</p></div>
+                                    <div class="col-md-3 mb-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="90210"></div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">Street Address (Optional)</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="Street Address"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Country</p></div>
+                                    <div class="col-md-3 mb-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="United States"></div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">City</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0 w-100" type="text" name="" value="City"></div>
+                                    <div class="col-md-3 mb-3"><p class="m-0">Address Type</p></div>
+                                    <div class="col-md-3 mb-3">
+                                        <select class="mr-3 p-0 m-0 w-100">
+                                            <option>Main</option>
+                                            <option>Work</option>
+                                            <option>Home</option>
+                                            <option>Billing</option>
+                                            <option>Shipping</option>
+                                            <option>Purchase Order</option>
+                                            <option>E-Check</option>
+                                            <option>Other</option>
+                                            <option>No Address Type</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-inline-flex p-0 w-100">
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0">State</p></div>
+                                    <div class="col-md-3"><input class="mr-3 p-0 m-0  w-100" type="text" name="" value="California"></div>
+                                    <div class="col-md-3 mb-3 p-0"><p class="m-0"></p></div>
+                                    <div class="col-md-3 d-inline-flex mb-3">
+                                        <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Cancel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
