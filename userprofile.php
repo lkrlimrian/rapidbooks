@@ -270,100 +270,94 @@
                         </div>
                     </div>
 
-                    <div class="card mb-2"> <!-- TWO -->
-                        <div class="card-header p-0 bg-white" id="headingTwo">
+                    <div class="card mb-2"> <!-- SIX -->
+                        <div class="card-header p-0 bg-white" id="headingSix">
                             <!-- <h5 class="mb-0"> -->
                             <div class="col-md-12 py-3">
                                 <div class="col-md-4">
-                                    <p class="font-weight-bold text-left m-0">User ID</p>
+                                    <p class="font-weight-bold text-left m-0">Two-step verification</p>
                                 </div>
                                 <div class="col-md-4 text-left">
-                                    <p class="m-0">john.doe</p>
+                                    <p class="m-0 text-info">Turn On</p>
                                 </div>
-                                <div class="col-md-4 text-right">
-                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Edit</p>
-                                </div>
+                                <!-- <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Edit</p>
+                                </div> -->
                             </div>
                             <!-- </h5> -->
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <!-- <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-5 d-inline-flex mb-3"></div>
                                     <div class="col-md-5 d-inline-flex mb-3">
                                         <p class="m-0">User ID</p>
                                         <input class="ml-3 p-0 m-0" type="text" name="" value="john.doe">
                                     </div>
-                                    <div class="col-md-5 d-inline-flex mb-3">
-                                        <p class="m-0">Password</p>
-                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
-                                    </div>
+                                    
                                     <div class="col-md-2 d-inline-flex p-0">
                                         <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
-                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Cancel</p>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSoix">Cancel</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="card mb-2"> <!-- THREE -->
-                        <div class="card-header p-0 bg-white" id="headingThree">
+                    <div class="card mb-2"> <!-- SEVEN -->
+                        <div class="card-header p-0 bg-white" id="headingSeven">
                             <!-- <h5 class="mb-0"> -->
                             <div class="col-md-12 py-3">
                                 <div class="col-md-4">
-                                    <p class="font-weight-bold text-left m-0">Email Address</p>
+                                    <p class="font-weight-bold text-left m-0">Phone</p>
                                 </div>
                                 <div class="col-md-4 text-left">
-                                    <p class="m-0">john.doe@mail.com</p>
+                                    <p class="m-0">+63 912345678</p>
                                 </div>
                                 <div class="col-md-4 text-right">
-                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Edit</p>
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Edit</p>
                                 </div>
                             </div>
                             <!-- </h5> -->
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="col-md-12 d-inline-flex p-0">
                                     <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
-                                        <p class="m-0">Email Address</p>
-                                        <input class="ml-3 p-0 m-0" type="email" name="" value="john.doe@gmail.com">
                                     </div>
-                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
-                                        <p class="m-0">Confirm Email</p>
-                                        <input class="ml-3 p-0 m-0" type="email" name="" value="">
-                                    </div>
-                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
-                                        <p class="m-0">Password</p>
-                                        <input class="ml-3 p-0 m-0" type="password" name="" value="">
+                                    <div class="col-md-4 mb-3 mr-3 p-0">
+                                        <p class="m-0">+63 912345678</p> <br>
+
+                                        <p>Verify your phone number. This will help keep your account safe and secure. We will use your preferred method to help you login if you lose your password.</p>
+
+
+                                        <button class="btn btn-primary rounded py-1 py-0 mb-3">Continue</button>
+
                                     </div>
                                 </div>
 
-                                <div class="col-md-2 d-inline-flex p-0 float-right">
-                                    <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
-                                    <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cancel</p>
+                                <div class="col-md-2 p-0 float-right">
+                                    
+                                    <p class="text-info collapsed float-right mr-2" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Cancel</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card mb-2"> <!-- FOUR -->
-                        <div class="card-header p-0 bg-white" id="headingFour">
+                    <div class="card mb-2"> <!-- EIGHT -->
+                        <div class="card-header p-0 bg-white" id="headingEight">
                             <!-- <h5 class="mb-0"> -->
                             <div class="col-md-12 py-3">
                                 <div class="col-md-4">
-                                    <p class="font-weight-bold text-left m-0">Address</p>
+                                    <p class="font-weight-bold text-left m-0">Linked Identities</p>
                                 </div>
                                 <div class="col-md-4 text-left">
-                                    <p class="m-0">Street, Street Address, City, State Zip Code, Country, Main</p>
-                                </div>
-                                <div class="col-md-4 text-right">
-                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Edit</p>
+                                    <p class="m-0">You do not have any linked identities.</p>
                                 </div>
                             </div>
                             <!-- </h5> -->
                         </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="col-md-12 d-inline-flex p-0 w-100">
                                     <div class="col-md-3 mb-3 p-0"><p class="m-0">Street</p></div>
@@ -401,12 +395,53 @@
                                     <div class="col-md-3 mb-3 p-0"><p class="m-0"></p></div>
                                     <div class="col-md-3 d-inline-flex mb-3">
                                         <button class="btn btn-success rounded py-1 py-0 mb-3">Save</button>
-                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Cancel</p>
+                                        <p class="text-info collapsed ml-3" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Cancel</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="card mb-2"> <!-- NINE -->
+                        <div class="card-header p-0 bg-white" id="headingNine">
+                            <!-- <h5 class="mb-0"> -->
+                            <div class="col-md-12 py-3">
+                                <div class="col-md-4">
+                                    <p class="font-weight-bold text-left m-0">Account Activity</p>
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    <p class="m-0">QuickBooks, Near: National Capital Region, Philippines</p>
+                                </div>
+                                <div class="col-md-4 text-right">
+                                    <p class="text-info collapsed m-0" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">View</p>
+                                </div>
+                            </div>
+                            <!-- </h5> -->
+                        </div>
+                        <!-- <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="col-md-12 d-inline-flex p-0">
+                                    <div class="col-md-4 d-inline-flex mb-3 mr-3 p-0">
+                                    </div>
+                                    <div class="col-md-4 mb-3 mr-3 p-0">
+                                        <p class="m-0">+63 912345678</p> <br>
+
+                                        <p>Verify your phone number. This will help keep your account safe and secure. We will use your preferred method to help you login if you lose your password.</p>
+
+
+                                        <button class="btn btn-primary rounded py-1 py-0 mb-3">Continue</button>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 p-0 float-right">
+                                    
+                                    <p class="text-info collapsed float-right mr-2" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Close</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
                 </div>
             </div>
         </div>

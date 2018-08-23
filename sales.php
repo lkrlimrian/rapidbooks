@@ -92,14 +92,14 @@
                             <option>Send Transactions</option>
                             <option>Send Reminders</option>
                         </select>
-                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#staticModal">
+                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#salesModal">
                         Filter
                         </button>
-                        <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="salesModal" tabindex="-1" role="dialog" aria-labelledby="salesModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="staticModalLabel">Filter</h5>
+                                        <h5 class="modal-title" id="salesModalLabel">Filter</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>

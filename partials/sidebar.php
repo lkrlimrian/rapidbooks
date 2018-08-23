@@ -69,7 +69,7 @@
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-gears width30"></i><a href="accountsandsettings.php">Account and Settings</a></li>
                             <li><i class="menu-icon fa fa-files-o"></i><a href="customformstyles.php">Custom Form Styles</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o width30"></i><a href="chartofaccounts.php">Chart of Accounts</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o width30"></i><a href="accounting.php">Chart of Accounts</a></li>
                         </ul>
                     </li>
                     
