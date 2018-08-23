@@ -3,6 +3,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/donut.js"></script>
+    <script src="assets/js/redirect.js"></script>
 
     <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="assets/js/dashboard.js"></script>

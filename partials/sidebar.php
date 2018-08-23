@@ -77,7 +77,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list width30"></i>Lists</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-list-alt padding0"></i><a href="alllists.php">All Lists</a></li>
-                            <li><i class="menu-icon fa fa-th-large padding0"></i><a href="sales.php#extra-tab">Products and Services</a></li>
+                            <li><i class="menu-icon fa fa-th-large padding0"></i><a href="sales.php#extra">Products and Services</a></li>
                             <li><i class="menu-icon fa fa-file-text-o "></i><a href="recurringtransactions.php">Recurring Transactions</a></li>
                             <li><i class="menu-icon fa fa-paperclip "></i><a href="attachments.php">Attachments</a></li>
                         </ul>
@@ -88,7 +88,7 @@
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-download"></i><a href="importdata.php">Import Data</a></li>
                             <li><i class="menu-icon fa fa-upload"></i><a href="exportdata.php">Export Data</a></li>
-                            <li><i class="menu-icon fa ti-agenda"></i><a href="reconcile.php">Reconcile</a></li>
+                            <li><i class="menu-icon fa ti-agenda"></i><a href="accounting.php#profile">Reconcile</a></li>
                             <li><i class="menu-icon fa ti-map"></i><a href="budgeting.php">Budgeting</a></li>
                             <li><i class="menu-icon fa fa-map-o"></i><a href="auditlog.php">Audit Log</a></li>
                         </ul>

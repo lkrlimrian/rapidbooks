@@ -65,23 +65,23 @@
                     <div class="col-md-12 text-white p-0 mb-5">
                         <div class="col-md-2 bg-ltblue pb-0">
                             <h3>PHP0</h3>
-                            <p>0 ESTIMATE</p>
+                            <p class="font14">0 ESTIMATE</p>
                         </div>
                         <div class="col-md-2 bg-blue">
                             <h3>PHP0</h3>
-                            <p>0 Unbilled Activity</p>
+                            <p class="font14">0 Unbilled Activity</p>
                         </div>
                         <div class="col-md-2 bg-orange">
                             <h3>PHP0</h3>
-                            <p>0 OVERDUE</p>
+                            <p class="font14">0 OVERDUE</p>
                         </div>
                         <div class="col-md-2 bg-grey">
                             <h3>PHP2,000</h3>
-                            <p>1 OPEN INVOICE</p>
+                            <p class="font14">1 OPEN INVOICE</p>
                         </div>
                         <div class="col-md-4 bg-ltgreen">
                             <h3>PHP0</h3>
-                            <p>0 PAID LAST 30 DAYS</p>
+                            <p class="font14">0 PAID LAST 30 DAYS</p>
                         </div>
                     </div>
                     <div class="float-left">
