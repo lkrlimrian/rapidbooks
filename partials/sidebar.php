@@ -28,37 +28,37 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home width30"></i>Customers</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-gears pasdding0"></i><a href="invoice.php">Invoice</a></li>
-                            <li><i class="menu-icon fa fa-files-o"></i><a href="font-themify.php">Receive Payment</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o"></i><a href="font-themify.php">Estimate</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="font-themify.php">Credit Notice</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="font-themify.php">Sales Receipt</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="font-themify.php">Refund Receipt</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="font-themify.php">Delayed Credit</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="font-themify.php">Delayed Charge</a></li>
+                            <li><i class="menu-icon fa fa-files-o"></i><a href="receivepayment.php">Receive Payment</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o"></i><a href="estimate.php">Estimate</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="creditnotice.php">Credit Notice</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="salesreceipt.php">Sales Receipt</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="refundreceipt.php">Refund Receipt</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcredit.php">Delayed Credit</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcharge.php">Delayed Charge</a></li>
                         </ul>
                     </li>
                     
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list width30"></i>Suppliers</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-list-alt "></i><a href="charts-chartjs.php">Expense</a></li>
-                            <li><i class="menu-icon fa fa-th-large "></i><a href="charts-flot.php">Check</a></li>
-                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="charts-peity.php">Bill</a></li>
-                            <li><i class="menu-icon fa fa-paperclip "></i><a href="charts-peity.php">Pay Bills</a></li>
-                            <li><i class="menu-icon fa fa-th-large "></i><a href="charts-flot.php">Purchase Order</a></li>
-                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="charts-peity.php">Supplier Credit</a></li>
-                            <li><i class="menu-icon fa fa-paperclip "></i><a href="charts-peity.php">Credit Card Credit</a></li>
+                            <li><i class="menu-icon fa fa-list-alt "></i><a href="expense.php">Expense</a></li>
+                            <li><i class="menu-icon fa fa-th-large "></i><a href="check.php">Check</a></li>
+                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="bill.php">Bill</a></li>
+                            <li><i class="menu-icon fa fa-paperclip "></i><a href="paybills.php">Pay Bills</a></li>
+                            <li><i class="menu-icon fa fa-th-large "></i><a href="purchaseorder.php">Purchase Order</a></li>
+                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="suppliercredit.php">Supplier Credit</a></li>
+                            <li><i class="menu-icon fa fa-paperclip "></i><a href="creditcardcredit.php">Credit Card Credit</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench width30"></i>Other</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-download"></i><a href="maps-gmap.php">Bank Deposit</a></li>
-                            <li><i class="menu-icon fa fa-upload"></i><a href="maps-vector.php">Transfer</a></li>
-                            <li><i class="menu-icon fa ti-agenda"></i><a href="maps-gmap.php">Journal Entry</a></li>
-                            <li><i class="menu-icon fa ti-map"></i><a href="maps-vector.php">Statement</a></li>
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.php">Invest Qty Adjustment</a></li>
+                            <li><i class="menu-icon fa fa-download"></i><a href="bankdeposit.php">Bank Deposit</a></li>
+                            <li><i class="menu-icon fa fa-upload"></i><a href="transfer.php">Transfer</a></li>
+                            <li><i class="menu-icon fa ti-agenda"></i><a href="journalentry.php">Journal Entry</a></li>
+                            <li><i class="menu-icon fa ti-map"></i><a href="statement.php">Statement</a></li>
+                            <li><i class="menu-icon fa fa-map-o"></i><a href="investqtyadj.php">Invest Qty Adjustment</a></li>
                         </ul>
                     </li>
                     
@@ -67,30 +67,30 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home width30"></i>Your Company</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-gears width30"></i><a href="font-fontawesome.php">Account and Settings</a></li>
-                            <li><i class="menu-icon fa fa-files-o"></i><a href="font-themify.php">Custom Form Styles</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o width30"></i><a href="font-themify.php">Chart of Accounts</a></li>
+                            <li><i class="menu-icon fa fa-gears width30"></i><a href="accountsandsettings.php">Account and Settings</a></li>
+                            <li><i class="menu-icon fa fa-files-o"></i><a href="customformstyles.php">Custom Form Styles</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o width30"></i><a href="accounting.php">Chart of Accounts</a></li>
                         </ul>
                     </li>
                     
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list width30"></i>Lists</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-list-alt padding0"></i><a href="charts-chartjs.php">All Lists</a></li>
-                            <li><i class="menu-icon fa fa-th-large padding0"></i><a href="charts-flot.php">Products and Services</a></li>
-                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="charts-peity.php">Recurring Transactions</a></li>
-                            <li><i class="menu-icon fa fa-paperclip "></i><a href="charts-peity.php">Attachments</a></li>
+                            <li><i class="menu-icon fa fa-list-alt padding0"></i><a href="alllists.php">All Lists</a></li>
+                            <li><i class="menu-icon fa fa-th-large padding0"></i><a href="sales.php#extra">Products and Services</a></li>
+                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="recurringtransactions.php">Recurring Transactions</a></li>
+                            <li><i class="menu-icon fa fa-paperclip "></i><a href="attachments.php">Attachments</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench width30"></i>Tools</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-download"></i><a href="maps-gmap.php">Import Data</a></li>
+                            <li><i class="menu-icon fa fa-download"></i><a href="importdata.php">Import Data</a></li>
                             <li><i class="menu-icon fa fa-upload"></i><a href="exportdata.php">Export Data</a></li>
-                            <li><i class="menu-icon fa ti-agenda"></i><a href="maps-gmap.php">Reconcile</a></li>
-                            <li><i class="menu-icon fa ti-map"></i><a href="maps-vector.php">Budgeting</a></li>
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.php">Audit Log</a></li>
+                            <li><i class="menu-icon fa ti-agenda"></i><a href="accounting.php#profile">Reconcile</a></li>
+                            <li><i class="menu-icon fa ti-map"></i><a href="budgeting.php">Budgeting</a></li>
+                            <li><i class="menu-icon fa fa-map-o"></i><a href="auditlog.php">Audit Log</a></li>
                         </ul>
                     </li>
                 </ul>

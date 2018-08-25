@@ -1,10 +1,3 @@
-<?php
-    function includePartial($partial) {
-        foreach (glob("partials/".$partial."*.php") as $filename) {
-            include $filename;
-        }
-    }
-    ?>
 <!doctype html>
 <head>
     <?php include "partials/head.php"; ?>
@@ -45,15 +38,15 @@
                         <!-- Button trigger modal -->
                         <!-- <span class="table-add float-right mb-3 mr-2"><button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#staticModal">New Rule</button></span> -->
                         <div class="col-md-12 p-0 my-2">
-                            <input type="text" name="" placeholder="Find products and services" class="font12">
-                            <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#filterModal">Filter</button>
+                            <button type="button" class="btn btn-secondary bg-white text-dark rounded mb-1 p-1 px-4" data-toggle="modal" data-target="#filterModal">Filter</button>
                             <div class="d-inline-flex float-right">
                                 <li class="fa fa-print pl-2"><a href=""></a></li>
                                 <li class="fa fa-cog pl-2"><a href=""></a></li>
                             </div>
                         </div>
                         <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true" data-backdrop="static">
-                            <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-dialog modal-lg" role="document">
+                                .
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="filterModalLabel">Filter</h5>
@@ -63,25 +56,127 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="col-md-12 d-inline-flex p-0">
-                                            <p class="float-left my-1 mr-2">Status</p>
+                                            <p class="float-left my-1 mr-2">Users</p>
                                             <select class="float-right w-200px p-0">
-                                                <option>Active</option>
-                                                <option>Inactive</option>
-                                                <option>All</option>
+                                                <option>All Users</option>
+                                                <option>Support Representative</option>
+                                                <option>John Doe</option>
+                                                <!-- Current User -->
+                                                <option>System Admin</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-12 d-inline-flex p-0">
+                                        <div class="col-md-4 d-inline-flex p-0 mt-2">
                                             <p class="float-left my-1 mr-2">Type</p>
                                             <select class="float-right w-200px p-0">
-                                                <option>Active</option>
-                                                <option>Inactive</option>
-                                                <option>All</option>
+                                                <option>All Dates</option>
+                                                <option>Custom</option>
+                                                <option>Today</option>
+                                                <option>Yesterday</option>
+                                                <option>This Week</option>
+                                                <option>This Month</option>
+                                                <option>This Quarter</option>
+                                                <option>This Year</option>
+                                                <option>Last Week</option>
+                                                <option>Last Month</option>
+                                                <option>Last Quarter</option>
+                                                <option>Last Year</option>
                                             </select>
+                                        </div>
+                                        <div class="col-md-4 d-inline-flex p-0">
+                                            <p class="float-left my-1 mr-2">From</p>
+                                            <input type="date" name="">
+                                        </div>
+                                        <div class="col-md-4 d-inline-flex p-0">
+                                            <p class="float-left my-1 mr-2">To</p>
+                                            <input type="date" name="">
+                                        </div>
+                                        <div class="col-md-12 p-0 mt-1">
+                                            <p class="float-left my-1 mr-2">Events</p>
+                                            <div class="ml-5 mt-1">
+                                                <!-- Default checked -->
+                                                <div class="custom-control custom-radio ml-2">
+                                                    <input type="radio" class="custom-control-input" id="showall" name="defaultExampleRadios" checked>
+                                                    <label class="custom-control-label" for="showall">Show All Events</label>
+                                                </div>
+                                                <!-- Default unchecked -->
+                                                <div class="custom-control custom-radio ml-2">
+                                                    <input type="radio" class="custom-control-input" id="showfew" name="defaultExampleRadios">
+                                                    <label class="custom-control-label" for="showfew">Show only these Events</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-12 d-inline-flex">
+                                            <div class="col-md-4 ml-5 mt-1">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check1">
+                                                    <label class="custom-control-label" for="check1">Sign in/Sign out</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check2">
+                                                    <label class="custom-control-label" for="check2">Budgets</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check3">
+                                                    <label class="custom-control-label" for="check3">Recurring Templates</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check4">
+                                                    <label class="custom-control-label" for="check4">Settings</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check5">
+                                                    <label class="custom-control-label" for="check5">Reconcilications</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check6">
+                                                    <label class="custom-control-label" for="check6">Transactions</label>
+                                                </div>
+                                            </div>
+                                            <!-- Second Column -->
+                                            <div class="col-md-4 ml-5 mt-1">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check7">
+                                                    <label class="custom-control-label" for="check7">lists</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check8">
+                                                    <label class="custom-control-label" for="check8">Time Events</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check9">
+                                                    <label class="custom-control-label" for="check9">Statements</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check10">
+                                                    <label class="custom-control-label" for="check10">Sales Customisations</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check11">
+                                                    <label class="custom-control-label" for="check11">Data Exchange</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 d-inline-flex p-0 ml-5">
+                                            <div class="ml-5 mt-1">
+                                                <p class="float-left my-1 mr-2">Show: </p>
+                                                <select class="float-right w-200px p-0">
+                                                    <option>All Transactions</option>
+                                                    <option>Deleted/Voided Transactions</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 d-inline-flex p-0 ml-5">
+                                            <div class="ml-5 mt-1">
+                                                <p class="float-left my-1 mr-2">Using: </p>
+                                                <select class="float-right w-200px p-0">
+                                                    <option> Select Account</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                                        <button type="button" class="btn btn-success">Apply</button>
+                                        <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Reset</button>
+                                        <button type="button" class="btn btn-success rounded">Apply</button>
                                     </div>
                                 </div>
                             </div>
@@ -113,123 +208,6 @@
                             <a class="pl-2">1-1 of 1</a>
                             <a class="pl-2" href="#">Next</a>
                             <a class="pl-2" href="#">Last&raquo;</a>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticModalLabel">Add yeah Rule</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="col-md-12 d-inline-flex">
-                                        <div class="col-md-6 w-100">
-                                            <div class="padding0">
-                                                <p class="float-left text-center">Rule Name</p>
-                                                <input name="rulename" type="text" class="float-right w-100">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 w-100">
-                                            <div class="padding0">
-                                                <p>For</p>
-                                                <select class="w-100">
-                                                    <option>Money out</option>
-                                                    <option>Money in</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 w-100">
-                                            <div class="padding0">
-                                                <p>In</p>
-                                                <select class="w-100">
-                                                    <option>All Bank Accounts</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 pt-3">
-                                        <div class="col-md-12">
-                                            <div class="d-inline-flex">
-                                                <p>When a transaction meets </p>
-                                                <select>
-                                                    <option>all</option>
-                                                    <option>any</option>
-                                                </select>
-                                                <p>of these conditions.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 d-inline pt-1">
-                                        <div class="col-md-3 w-100">
-                                            <div class="padding0">
-                                                <select class="w-100">
-                                                    <option>Bank Text</option>
-                                                    <option>Description</option>
-                                                    <option>Amount</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 w-100">
-                                            <div class="padding0">
-                                                <select class="w-100">
-                                                    <option>Contains</option>
-                                                    <option>Does not contain</option>
-                                                    <option>Is Exactly</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 w-100">
-                                            <div class="padding0">
-                                                <input name="rulename" type="text" class="float-right w-100">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12"><button class="btn btn-success">Add Line</button></div>
-                                    </div>
-                                    <div class="col-md-12 d-inline-flex pt-3">
-                                        <div class="col-md-4 w-100">
-                                            <div class="padding0">
-                                                <p>Transaction Type</p>
-                                                <select class="w-100">
-                                                    <option>Expense</option>
-                                                    <option>Cheque</option>
-                                                    <option>Transfer</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 w-100">
-                                            <div class="padding0">
-                                                <p>Payee</p>
-                                                <select class="w-100">
-                                                    <option>Money out</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 w-100">
-                                            <div class="padding0">
-                                                <p>Category</p>
-                                                <select class="w-100">
-                                                    <option>All Bank Accounts</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 pt-2">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-success">Split</button>
-                                            <p>Memo</p>
-                                            <input name="rulename" type="text" class="w-50"> <br>
-                                            <input type="checkbox">Automatically add to my books
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-success">Save</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

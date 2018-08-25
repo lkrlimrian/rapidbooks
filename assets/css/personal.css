@@ -53,6 +53,10 @@
 	color: #B3B7BE;
 }
 
+.text-red{
+	color: #d83b41 !important;
+}
+
 .text-white p{
 	color: white !important;
 }

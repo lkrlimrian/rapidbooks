@@ -1,10 +1,3 @@
-<?php
-    function includePartial($partial) {
-        foreach (glob("partials/".$partial."*.php") as $filename) {
-            include $filename;
-        }
-    }
-    ?>
 <!doctype html>
 <head>
     <?php include "partials/head.php"; ?>
@@ -70,14 +63,14 @@
                             <option>Send Transactions</option>
                             <option>Send Reminders</option>
                         </select>
-                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#staticModal">
+                        <button type="button" class="btn btn-secondary rounded mb-1 py-0" data-toggle="modal" data-target="#FilterModal">
                         Filter
                         </button>
-                        <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="FilterModal" tabindex="-1" role="dialog" aria-labelledby="FilterModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="staticModalLabel">Filter</h5>
+                                        <h5 class="modal-title" id="FilterodalLabel">Filter</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>
@@ -185,8 +178,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                                        <button type="button" class="btn btn-success">Apply</button>
+                                        <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Reset</button>
+                                        <button type="button" class="btn btn-success rounded">Apply</button>
                                     </div>
                                 </div>
                             </div>
@@ -362,87 +355,219 @@
                     </div>
                 </div>
             </div>
-            <!-- ======================================================================================================================================== SECOND TAB--> 
+<!-- ======================================================================================================== SECOND TAB--> 
             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <!-- <h3>Sales Transactions</h3> -->
+                <h3 class="float-left">Suppliers</h3>
+
+                <div class="btn-group float-right mr-2 mb-3">
+                    <button type="button" class="btn btn-success" data-target="#supplierModal" data-toggle="modal">New Supplier</button>
+                    <button type="button" class="btn btn-success dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Import Supplier</a>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="supplierModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticModalLabel">Add New Supplier</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="col-md-6 p-0">
+                                        <div class="col-md-6 p-0 pr-1">
+                                            <p>First Name</p>
+                                            <input type="text" name="" class="w-100">
+                                        </div>
+                                        <div class="col-md-6 p-0 pl-1">
+                                            <p>Last Name</p>
+                                        <input type="text" name="" class="w-100">
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <p>Company</p>
+                                            <input type="text" name="" class="w-100">
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <p>Display name as</p>
+                                            <input type="text" name="" class="w-100">
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <p>Address</p>
+                                            <textarea rows="2" class="w-100" placeholder="Street"></textarea>
+                                        </div>
+
+                                        <div class="col-md-6 p-0 pr-1 pb-1">
+                                            <input type="text" name="" placeholder="City/Town" class="w-100">
+                                        </div>
+                                        <div class="col-md-6 p-0 pl-1 pb-1">
+                                            <input type="text" name="" placeholder="State/Province" class="w-100">
+                                        </div>
+                                        <div class="col-md-6 p-0 pr-1">
+                                            <input type="text" name="" placeholder="Postal Code" class="w-100">
+                                        </div>
+                                        <div class="col-md-6 p-0 pl-1" >
+                                            <input type="text" name="" placeholder="Country" class="w-100">
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <p>Notes</p>
+                                            <textarea rows="2" class="w-100"></textarea>
+                                        </div>
+
+                                        
+                                    </div>
+
+
+
+                                    <div class="col-md-6 p-0 pl-1">
+                                        <div class="col-md-12 p-0">
+                                            <p>Email</p>
+                                            <input type="email" name="" class="w-100" placeholder="separate multiple emails with commas">
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <div class="col-md-4 p-0 pr-1">
+                                                <p>Phone</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                            <div class="col-md-4 p-0 pr-1">
+                                                <p>Mobile</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                            <div class="col-md-4 p-0">
+                                                <p>Fax</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <div class="col-md-4 p-0 pr-1">
+                                                <p>Other</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                            <div class="col-md-8 p-0">
+                                                <p>Website</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <div class="col-md-6 p-0 pr-1">
+                                                <p>Billing rate (/hr)</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+
+                                            <div class="col-md-6 p-0">
+                                                <p>Terms</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <div class="col-md-6 p-0 pr-1">
+                                                <p>Opening balance</p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+
+                                            <div class="col-md-6 p-0">
+                                                <p>as of</p>
+                                                <input type="date" name="" class="w-100">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <div class="col-md-6 p-0 pr-1">
+                                                <p>Account No. </p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+
+                                            <div class="col-md-6 p-0">
+                                                <p>Business ID No. </p>
+                                                <input type="text" name="" class="w-100">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 p-0">
+                                            <p>Attachments</p>
+                                            <div class="input-group mb-3 p-0">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                    <label class="custom-file-label bg-transparent" for="inputGroupFile01">Choose file</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success rounded">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-md-12 text-white p-0 mb-5">
+                    <div class="col-md-4 bg-blue pb-0">
+                        <h3>PHP0</h3>
+                        <p class="font14">0 PURCHASE ORDER</p>
+                    </div>
+                    <div class="col-md-2 bg-orange">
+                        <h3>PHP0</h3>
+                        <p class="font14">0 OVERDUE</p>
+                    </div>
+                    <div class="col-md-2 bg-secondary">
+                        <h3>PHP0</h3>
+                        <p class="font14">0 OPEN</p>
+                    </div>
+                    <div class="col-md-4 bg-ltgreen">
+                        <h3>PHP0</h3>
+                        <p class="font14">0 PAID LAST 30 DAYS</p>
+                    </div>
+                </div>
+
                 <div id="table" class="table-editable">
                     <!-- Button trigger modal -->
-                    <!-- <span class="table-add float-right mb-3 mr-2"><button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#staticModal">New Rule</button></span> -->
-                    <div class="col-md-12 p-0 mb-5">
-                        <div class="col-md-6">
-                            <div class="d-inline-block w-100 font12">
-                                <p class="float-left">PHP 2,000.00 UNPAID</p>
-                                <p class="float-right">LAST 365 DAYS</p>
-                            </div>
-                            <div class="d-inline-block w-100">
-                                <div class="float-left padding0">
-                                    <p class="m-0 text-orange">PHP 0.00</p>
-                                    <p class="font12">OVERDUE</p>
-                                </div>
-                                <div class="float-right">
-                                    <p class="m-0 text-secondary">PHP 2,000.00</p>
-                                    <p class="font12">NOT YET DUE</p>
-                                </div>
-                            </div>
-                            <div class="progress mb-3 w-100">
-                                <div class="progress-bar bg-grey" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                    <div class="mb-0">
+                        <div class="float-left">
+                            <select>
+                                <option value="" disabled selected>Batch Actions</option>
+                                <option>Print Transactions</option>
+                                <option>Print Packing Slip</option>
+                                <option>Send Transactions</option>
+                                <option>Send Reminders</option>
+                            </select>
                         </div>
-                        <div class="col-md-6">
-                            <div class="d-inline-block w-100 font12">
-                                <p class="float-left">PHP 0.00 UNPAID</p>
-                                <p class="float-right">LAST 365 DAYS</p>
-                            </div>
-                            <div class="d-inline-block w-100">
-                                <div class="float-left padding0">
-                                    <p class="m-0 text-ltgreen">PHP 0.00</p>
-                                    <p class="font12">NOT DEPOSITED</p>
-                                </div>
-                                <div class="float-right">
-                                    <p class="m-0 text-success">PHP 2,000.00</p>
-                                    <p class="font12">DEPOSITED</p>
-                                </div>
-                            </div>
-                            <div class="progress mb-3 w-100 bg-success">
-                                <div class="progress-bar bg-ltgreen" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                        <div class="d-inline-flex float-right">
+                            <li class="fa fa-print pl-2"><a href=""></a></li>
+                            <li class="fa fa-save pl-2"><a href=""></a></li>
+                            <li class="fa fa-cog pl-2"><a href=""></a></li>
                         </div>
-                    </div>
-                    <div class="float-left">
-                        <select>
-                            <option value="" disabled selected>Batch Actions</option>
-                            <option>Print Transactions</option>
-                            <option>Print Packing Slip</option>
-                            <option>Send Transactions</option>
-                            <option>Send Reminders</option>
-                        </select>
-                    </div>
-                    <div class="d-inline-flex float-right">
-                        <button class="btn btn-success">New Invoice</button>
                     </div>
                     <table class="table table-bordered table-responsive-md table-striped text-center font14">
                         <tr>
                             <th class="text-center"><input type="checkbox" name=""></th>
-                            <th class="text-center">DATE</th>
-                            <th class="text-center">TYPE</th>
-                            <th class="text-center">NO.</th>
-                            <th class="text-center">CUSTOMER</th>
-                            <th class="text-center">DUE-DATE</th>
-                            <th class="text-center">BALANCE</th>
-                            <th class="text-center">TOTAL</th>
-                            <th class="text-center">STATUS</th>
+                            <th class="text-center">SUPPLIER/COMPANY</th>
+                            <th class="text-center">PHONE</th>
+                            <th class="text-center">EMAIL</th>
+                            <th class="text-center">OPEN BALANCE</th>
                             <th class="text-center">ACTION</th>
                         </tr>
                         <tr>
-                            <td class="pt-3-half" contenteditable="true"><input type="checkbox" name=""></td>
-                            <td class="pt-3-half" contenteditable="true">7/26/2018</td>
-                            <td class="pt-3-half" contenteditable="true">Invoice</td>
-                            <td class="pt-3-half" contenteditable="true">1001</td>
-                            <td class="pt-3-half" contenteditable="true">test customer</td>
-                            <td class="pt-3-half" contenteditable="true">8/1/2018</td>
-                            <td class="pt-3-half" contenteditable="true">PHP 2,000.00</td>
-                            <td class="pt-3-half" contenteditable="true">PHP 2,000.00</td>
-                            <td class="pt-3-half" contenteditable="true">Open</td>
+                            <td class="pt-3-half" contenteditable="false"><input type="checkbox" name=""></td>
+                            <td class="pt-3-half" contenteditable="false">test SUPPLIER</td>
+                            <td class="pt-3-half" contenteditable="false">0912345678</td>
+                            <td class="pt-3-half" contenteditable="false">mail@mail.com</td>
+                            <td class="pt-3-half" contenteditable="false">PHP 800.00</td>
                             <td>
                                 <span class="table-add mb-3 mr-2">
                                     <a href="#!" class="text-info"><i aria-hidden="true">Receive Payment</i></a>

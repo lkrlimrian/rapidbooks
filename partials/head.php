@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
 <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/styley.css">
 <link rel="stylesheet" href="assets/css/table.css">
 <link rel="stylesheet" href="assets/css/personal.css">
 <link rel="stylesheet" href="assets/css/donut.css">
@@ -29,3 +30,4 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
