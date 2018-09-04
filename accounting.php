@@ -45,14 +45,20 @@
                     <div class="col-md-12 mb-4 p-0">
                         <h3 class="float-left">Chart of Accounts</h3>
                         <div class="d-inline-flex float-right">
+                            <div class="btn-group px-2">
+                                <button type="button" class="btn bg-success rounded-left text-white" data-toggle="modal" data-target="#chartofaccountsmodal">New</button>
+                                <button type="button" class="btn bg-success rounded-right text-white dropdown-toggle px-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="">New</a>
+                                    <a class="dropdown-item" href="">Import</a>
+                                </div>
+                            </div>
                             <button class="btn btn-outline-secondary bg-white text-secondary rounded mr-2">Run Report</button>
-                            <select class="bg-success rounded text-white">
-                                <option class="bg-white text-dark">New</option>
-                                <option class="bg-white text-dark">Import</option>
-                            </select>
                         </div>
                     </div>
-                    <div id="table" class="table-editable">
+                    <div id="coatable" class="table-editable">
                         <!-- Button trigger modal -->
                         <!-- <span class="table-add float-right mb-3 mr-2"><button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#staticModal">New Rule</button></span> -->
                         <div class="col-md-12 p-0 mb-2">
@@ -65,19 +71,43 @@
                                 <li class="fa fa-cog pl-2"><a href=""></a></li>
                             </div>
                         </div>
-                        <table class="table table-bordered table-responsive-md table-striped text-left font14">
-                            <tr>
+                        <table class="table table-bordered table-responsive-md text-left font14">
+                            <tr class="bg-ltgrey">
                                 <th class="text-left">NAME</th>
                                 <th class="text-left">TYPE</th>
                                 <th class="text-left">DETAIL TYPE</th>
-                                <th class="text-left">QUICKBOOKS BALANCE</th>
-                                <th class="text-left">BANK BALANCE</th>
-                                <th class="text-left">ACTION</th>
+                                <th class="text-left">BALANCE</th>
+                                <th class="text-center">BANK BALANCE</th>
+                                <th class="text-center">ACTION</th>
                             </tr>
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Cash and cash equivalents</td>
                                 <td class="pt-3-half" contenteditable="false">Cash and cash equivalents</td>
                                 <td class="pt-3-half" contenteditable="false">Cash and cash equivalents</td>
+                                <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
+                                <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
+                                <td class="text-center">
+                                    <span class="table-add mb-3 mr-2">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn bg-transparent text-info">Accounts History</button>
+                                            <button type="button" class="btn bg-transparent dropdown-toggle px-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="">Connect Bank</a>
+                                                <a class="dropdown-item" href="">Edit</a>
+                                                <a class="dropdown-item" href="">Delete</a>
+                                                <a class="dropdown-item" href="">Run Report</a>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!-- This is our clonable table line
+                            <tr>
+                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
+                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
+                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
                                 <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
                                 <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
                                 <td>
@@ -93,27 +123,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
-                            <tr>
-                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
-                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
-                                <td class="pt-3-half" contenteditable="false">Accounts Receivable (A/R)</td>
-                                <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
-                                <td class="pt-3-half" contenteditable="false">PHP 2,000.00</td>
-                                <td>
-                                    <span class="table-add mb-3 mr-2">
-                                        <a href="#!" class="text-info"><i aria-hidden="true">Accounts History</i></a>
-                                        <select>
-                                            <option></option>
-                                            <option>Connect Bank</option>
-                                            <option>Edit</option>
-                                            <option>Delete</option>
-                                            <option>Run Report</option>
-                                        </select>
-                                    </span>
-                                </td>
-                            </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Allowance for bad debt</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -133,7 +143,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Available for sale assets (short-term)</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -153,7 +163,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Inventory</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -173,7 +183,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Inventory Asset</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -193,7 +203,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Prepaid expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -213,7 +223,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Uncategorised Asset</td>
                                 <td class="pt-3-half" contenteditable="false">Current assets</td>
@@ -233,7 +243,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Accumulated depreciation on property, plant and equipment</td>
                                 <td class="pt-3-half" contenteditable="false">Fixed assets</td>
@@ -253,7 +263,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Property, plant and equipment</td>
                                 <td class="pt-3-half" contenteditable="false">Fixed assets</td>
@@ -273,7 +283,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Assets held for sale</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current assets</td>
@@ -293,7 +303,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Deferred tax assets</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current assets</td>
@@ -313,7 +323,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Goodwill</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current assets</td>
@@ -333,7 +343,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Intangibles</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current assets</td>
@@ -353,7 +363,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Long-Term Investments</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current assets</td>
@@ -373,7 +383,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Accounts Payable (A/P)</td>
                                 <td class="pt-3-half" contenteditable="false">Accounts Payable (A/P)</td>
@@ -393,7 +403,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Accrued liabilities</td>
                                 <td class="pt-3-half" contenteditable="false">Current liabilities</td>
@@ -413,7 +423,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Dividends payable</td>
                                 <td class="pt-3-half" contenteditable="false">Current liabilities</td>
@@ -433,7 +443,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Income tax payable</td>
                                 <td class="pt-3-half" contenteditable="false">Current liabilities</td>
@@ -453,7 +463,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Payroll Clearing</td>
                                 <td class="pt-3-half" contenteditable="false">Current liabilities</td>
@@ -473,7 +483,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Short-term debit</td>
                                 <td class="pt-3-half" contenteditable="false">Current liabilities</td>
@@ -493,7 +503,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Accrued holiday payable</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current liabilities</td>
@@ -513,7 +523,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Accrued non-current liabilities</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current liabilities</td>
@@ -533,7 +543,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Liabilities related to assets held for sale</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current liabilities</td>
@@ -553,7 +563,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Long-term debt</td>
                                 <td class="pt-3-half" contenteditable="false">Non-current liabilities</td>
@@ -573,7 +583,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Dividend disbursed</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -593,7 +603,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Equity in earnings of subsidiaries</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -613,7 +623,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Opening Balance Equity</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -633,7 +643,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other comprehensive income</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -653,7 +663,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Retained Earnings</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -673,7 +683,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Share capital</td>
                                 <td class="pt-3-half" contenteditable="false">Owner's equity</td>
@@ -693,7 +703,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Billable Expense Income</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -713,7 +723,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Revenue - General</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -733,7 +743,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Sales</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -753,7 +763,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Sales - retail</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -773,7 +783,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Sales - wholesale</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -793,7 +803,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Sales of Product Income</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -813,7 +823,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Unapplied Cash Payment Income</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -833,7 +843,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Uncategorised Income</td>
                                 <td class="pt-3-half" contenteditable="false">Income</td>
@@ -853,7 +863,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Change in inventory - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -873,7 +883,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -893,7 +903,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Direct labour - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -913,7 +923,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Discounts given - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -933,7 +943,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Freight and delivery - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -953,7 +963,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Materials - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -973,7 +983,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -993,7 +1003,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Overhead - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -1013,7 +1023,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Subcontractors - COS</td>
                                 <td class="pt-3-half" contenteditable="false">Cost of sales</td>
@@ -1033,7 +1043,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Amortisation expense</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1053,7 +1063,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Bad debts</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1073,7 +1083,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Bank charges</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1093,7 +1103,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Commissions and fees</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1113,7 +1123,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Dues and subscriptions</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1133,7 +1143,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Equipment rental</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1153,7 +1163,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Income tax expense</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1173,7 +1183,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Insurance - Disability</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1193,7 +1203,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Insurance - General</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1213,7 +1223,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Insurance - Liability</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1233,7 +1243,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Interest expense</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1253,7 +1263,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Legal and professional fees</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1273,7 +1283,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Loss on discontinued operations, net of tax</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1293,7 +1303,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Management compensation</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1313,7 +1323,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Meals and entertainment</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1333,7 +1343,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Office expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1353,7 +1363,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other general and administrative expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1373,7 +1383,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other selling expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1393,7 +1403,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other Types of Expenses-Advertising Expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1413,7 +1423,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Payroll Expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1433,7 +1443,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Purchases</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1453,7 +1463,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Rent or lease payments</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1473,7 +1483,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Repairs and Maintenance</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1493,7 +1503,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Shipping and delivery expense</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1513,7 +1523,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Stationery and printing</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1533,7 +1543,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Supplies</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1553,7 +1563,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Travel expenses - general and admin expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1573,7 +1583,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Travel expenses - selling expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1593,7 +1603,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Uncategorised Expense</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1613,7 +1623,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Utilities</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1633,7 +1643,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Wage expenses</td>
                                 <td class="pt-3-half" contenteditable="false">Expenses</td>
@@ -1653,7 +1663,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Dividend income</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1673,7 +1683,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Interest income</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1693,7 +1703,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Loss on disposal of assets</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1713,7 +1723,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Other operating income (expenses)</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1733,7 +1743,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Unrealised loss on securities, net of tax</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1753,7 +1763,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                             <tr>
                                 <td class="pt-3-half" contenteditable="false">Reconciliation Discrepancies</td>
                                 <td class="pt-3-half" contenteditable="false">Other income</td>
@@ -1773,7 +1783,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line -->
                         </table>
                         <div class="pagination float-right">
                             <a class="pl-2 active" href="#">&laquo;First</a>
@@ -1957,7 +1967,7 @@
                             </select>
                         </div>
                         <div class="d-inline-flex float-right">
-                            <button class="btn btn-success"><a href="invoice.html" class="text-white"> New Invoice</a></button>
+                            <button class="btn btn-success rounded"><a href="invoice.html" class="text-white" data-toggle="modal" data-target="#invoicemodal"> New Invoice</a></button>
                         </div>
                         <table class="table table-bordered table-responsive-md table-striped text-center font14">
                             <tr>
@@ -1995,7 +2005,7 @@
                                     </span>
                                 </td>
                             </tr>
-                            <!-- This is our clonable table line -->
+                            This is our clonable table line
                         </table>
                         <!-- <div class="pagination float-right">
                             <a class="pl-2 active" href="#">&laquo;First</a>

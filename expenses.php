@@ -44,13 +44,16 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="col-md-12 p-0">
                     <h3 class="float-left">Expense Transactions</h3>
-                    <select class="float-right mb-3 p-1 bg-success text-white">
-                        <option value="" disabled selected class="bg-white text-dark">New Transaction</option>
-                        <option class="bg-white text-dark">Bill</option>
-                        <option class="bg-white text-dark">Expense</option>
-                        <option class="bg-white text-dark">Cheque</option>
-                        <option class="bg-white text-dark">Supplier Credit</option>
-                    </select>
+                    <div class="btn-group float-right mb-3">
+                        <button class="btn btn-success rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New Transaction</button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#billmodal">Bill</a>
+                            <a class="dropdown-item" href="expense.php" data-toggle="modal" data-target="">Expense</a>
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#chequemodal">Cheque</a>
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#suppliercreditmodal">Supplier Credit</a>
+                        </div>
+                    </div>
                 </div>
                 <div id="table" class="table-editable pt-5">
                     <!-- Button trigger modal -->

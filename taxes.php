@@ -101,10 +101,10 @@
                             <option>Send Transactions</option>
                             <option>Send Reminders</option>
                         </select>
-                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#staticModal">
+                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#taxesmodal">
                         Filter
                         </button>
-                        <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal fade" id="taxesmodal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -396,7 +396,7 @@
                         </select>
                     </div>
                     <div class="d-inline-flex float-right">
-                        <button class="btn btn-success"><a href="invoice.html" class="text-white">Record Payment</a></button>
+                        <button class="btn btn-success rounded"><a href="invoice.php" class="text-white" data-toggle="modal" data-target="#invoicemodal">Record Payment</a></button>
                     </div>
                     <table class="table table-bordered table-responsive-md table-striped text-center font14">
                         <tr>

@@ -1043,7 +1043,7 @@ body.open .navbar .navbar-brand.hidden {
       .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu {
         display: block;
         left: inherit;
-        right: -180px;
+        right: -190px;
         top: 0; }
         .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu li a {
           display: block;

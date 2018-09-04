@@ -49,19 +49,21 @@
         <div class="tab-content pl-3 p-1" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <h3>Sales Transactions</h3>
+
+                <div class="btn-group float-right mb-3">
+                    <button class="btn btn-success rounded dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New Transaction</button>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#invoicemodal">Invoice</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#receivepaymentmodal">Payment</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#estimatemodal">Estimate</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#salesreceiptmodal">Sales Receipt</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#creditnotemodal">Credit Note</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#delayedchargemodal">Delayed Charge</a>
+                        <a class="dropdown-item" href="invoice.php" data-toggle="modal" data-target="#">Time Activity</a>
+                    </div>
+                </div>
                 <div id="table" class="table-editable">
-                    <!-- Button trigger modal -->
-                    <!-- <span class="table-add float-right mb-3 mr-2"><button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#staticModal">New Rule</button></span> -->
-                    <select class="float-right mb-3 p-1 bg-success text-white ">
-                        <option value="" disabled selected>New Transaction</option>
-                        <option>Invoice</option>
-                        <option>Payment</option>
-                        <option>Estimate</option>
-                        <option>Sales Receipt</option>
-                        <option>Credit Note</option>
-                        <option>Delayed Charge</option>
-                        <option>Time Activity</option>
-                    </select>
                     <div class="col-md-12 text-white p-0 mb-5">
                         <div class="col-md-2 bg-ltblue pb-0">
                             <h3>PHP0</h3>
@@ -92,7 +94,7 @@
                             <option>Send Transactions</option>
                             <option>Send Reminders</option>
                         </select>
-                        <button type="button" class="btn btn-secondary mb-1 py-0" data-toggle="modal" data-target="#salesModal">
+                        <button type="button" class="btn btn-secondary rounded mb-1 py-0" data-toggle="modal" data-target="#salesModal">
                         Filter
                         </button>
                         <div class="modal fade" id="salesModal" tabindex="-1" role="dialog" aria-labelledby="salesModalLabel" aria-hidden="true" data-backdrop="static">

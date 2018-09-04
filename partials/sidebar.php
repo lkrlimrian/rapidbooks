@@ -26,39 +26,39 @@
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home width30"></i>Customers</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-gears pasdding0"></i><a href="invoice.php">Invoice</a></li>
-                            <li><i class="menu-icon fa fa-files-o"></i><a href="receivepayment.php">Receive Payment</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o"></i><a href="estimate.php">Estimate</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="creditnotice.php">Credit Notice</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="salesreceipt.php">Sales Receipt</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="refundreceipt.php">Refund Receipt</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcredit.php">Delayed Credit</a></li>
-                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcharge.php">Delayed Charge</a></li>
+                        <ul class="sub-menu children dropdown-menu" style="right:-190px;">
+                            <li><i class="menu-icon fa fa-gears pasdding0"></i><a href="invoice.php" data-toggle="modal" data-target="#invoicemodal">Invoice</a></li>
+                            <li><i class="menu-icon fa fa-files-o"></i><a href="receivepayment.php" data-toggle="modal" data-target="#receivepaymentmodal">Receive Payment</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o"></i><a href="estimate.php" data-toggle="modal" data-target="#estimatemodal">Estimate</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="creditnotice.php" data-toggle="modal" data-target="#creditnotemodal">Credit Notice</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="salesreceipt.php" data-toggle="modal" data-target="#salesreceiptmodal">Sales Receipt</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="refundreceipt.php" data-toggle="modal" data-target="#refundreceiptmodal">Refund Receipt</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcredit.php" data-toggle="modal" data-target="#delayedcreditmodal">Delayed Credit</a></li>
+                            <li><i class="menu-icon fa fa-bar-chart-o "></i><a href="delayedcharge.php" data-toggle="modal" data-target="#delayedchargemodal">Delayed Charge</a></li>
                         </ul>
                     </li>
                     
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list width30"></i>Suppliers</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-list-alt "></i><a href="expense.php">Expense</a></li>
-                            <li><i class="menu-icon fa fa-th-large "></i><a href="check.php">Check</a></li>
-                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="bill.php">Bill</a></li>
-                            <li><i class="menu-icon fa fa-paperclip "></i><a href="paybills.php">Pay Bills</a></li>
-                            <li><i class="menu-icon fa fa-th-large "></i><a href="purchaseorder.php">Purchase Order</a></li>
-                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="suppliercredit.php">Supplier Credit</a></li>
-                            <li><i class="menu-icon fa fa-paperclip "></i><a href="creditcardcredit.php">Credit Card Credit</a></li>
+                        <ul class="sub-menu children dropdown-menu" style="right:-190px;">
+                            <li><i class="menu-icon fa fa-list-alt "></i><a href="expense.php" data-toggle="modal" data-target="#expensemodal">Expense</a></li>
+                            <li><i class="menu-icon fa fa-th-large "></i><a href="cheque.php" data-toggle="modal" data-target="#chequemodal">Cheque</a></li>
+                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="bill.php" data-toggle="modal" data-target="#billmodal">Bill</a></li>
+                            <li><i class="menu-icon fa fa-paperclip "></i><a href="paybills.php" data-toggle="modal" data-target="#paybillsmodal">Pay Bills</a></li>
+                            <li><i class="menu-icon fa fa-th-large "></i><a href="purchaseorder.php" data-toggle="modal" data-target="#purchaseordermodal">Purchase Order</a></li>
+                            <li><i class="menu-icon fa fa-file-text-o "></i><a href="suppliercredit.php" data-toggle="modal" data-target="#suppliercreditmodal">Supplier Credit</a></li>
+                            <li><i class="menu-icon fa fa-paperclip "></i><a href="creditcardcredit.php" data-toggle="modal" data-target="#creditcardcreditmodal">Credit Card Credit</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench width30"></i>Other</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-download"></i><a href="bankdeposit.php">Bank Deposit</a></li>
-                            <li><i class="menu-icon fa fa-upload"></i><a href="transfer.php">Transfer</a></li>
-                            <li><i class="menu-icon fa ti-agenda"></i><a href="journalentry.php">Journal Entry</a></li>
-                            <li><i class="menu-icon fa ti-map"></i><a href="statement.php">Statement</a></li>
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="investqtyadj.php">Invest Qty Adjustment</a></li>
+                        <ul class="sub-menu children dropdown-menu" style="right:-190px;">
+                            <li><i class="menu-icon fa fa-download"></i><a href="bankdeposit.php" data-toggle="modal" data-target="#bankdepositmodal">Bank Deposit</a></li>
+                            <li><i class="menu-icon fa fa-upload"></i><a href="transfer.php" data-toggle="modal" data-target="#transfermodal">Transfer</a></li>
+                            <li><i class="menu-icon fa ti-agenda"></i><a href="journalentry.php" data-toggle="modal" data-target="#journalentrymodal">Journal Entry</a></li>
+                            <li><i class="menu-icon fa ti-map"></i><a href="statements.php">Statements</a></li>
+                            <li><i class="menu-icon fa fa-map-o"></i><a href="investqtyadj.php" data-toggle="modal" data-target="#investqtyadjmodal">Invest Qty Adjustment</a></li>
                         </ul>
                     </li>
                     
@@ -66,7 +66,7 @@
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home width30"></i>Your Company</a>
-                        <ul class="sub-menu children dropdown-menu">
+                        <ul class="sub-menu children dropdown-menu" style="right:-190px;">
                             <li><i class="menu-icon fa fa-gears width30"></i><a href="accountsandsettings.php">Account and Settings</a></li>
                             <li><i class="menu-icon fa fa-files-o"></i><a href="customformstyles.php">Custom Form Styles</a></li>
                             <li><i class="menu-icon fa fa-bar-chart-o width30"></i><a href="accounting.php">Chart of Accounts</a></li>
@@ -75,7 +75,7 @@
                     
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list width30"></i>Lists</a>
-                        <ul class="sub-menu children dropdown-menu">
+                        <ul class="sub-menu children dropdown-menu style="right:-190px;"">
                             <li><i class="menu-icon fa fa-list-alt padding0"></i><a href="alllists.php">All Lists</a></li>
                             <li><i class="menu-icon fa fa-th-large padding0"></i><a href="sales.php#extra">Products and Services</a></li>
                             <li><i class="menu-icon fa fa-file-text-o "></i><a href="recurringtransactions.php">Recurring Transactions</a></li>
@@ -85,16 +85,18 @@
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench width30"></i>Tools</a>
-                        <ul class="sub-menu children dropdown-menu">
+                        <ul class="sub-menu children dropdown-menu style="right:-190px;"">
                             <li><i class="menu-icon fa fa-download"></i><a href="importdata.php">Import Data</a></li>
                             <li><i class="menu-icon fa fa-upload"></i><a href="exportdata.php">Export Data</a></li>
                             <li><i class="menu-icon fa ti-agenda"></i><a href="accounting.php#profile">Reconcile</a></li>
-                            <li><i class="menu-icon fa ti-map"></i><a href="budgeting.php">Budgeting</a></li>
+                            <li><i class="menu-icon fa ti-map"></i><a href="budgeting.php"  data-toggle="modal" data-target="#budgetingmodal">Budgeting</a></li>
                             <li><i class="menu-icon fa fa-map-o"></i><a href="auditlog.php">Audit Log</a></li>
                         </ul>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <?php include "partials/modals.php"; ?>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside><!-- /#left-panel -->
 

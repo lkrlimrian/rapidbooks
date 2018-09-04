@@ -19,10 +19,10 @@
                     </div>
                 </div>
                 <div class="float-right p-2">
-                    <button type="button" class="btn btn-success rounded" data-toggle="modal" data-target="#staticModal">
+                    <button type="button" class="btn btn-success rounded" data-toggle="modal" data-target="#statementmodal">
                     Create Statement
                     </button>
-                    <div class="modal fade" id="staticModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+                    <div class="modal fade" id="statementmodal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
                         <div class="modal-dialog modal-md" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -86,9 +86,9 @@
                                     <!-- end of second flex -->
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-success">Save</button>
-                                    <button type="button" class="btn btn-success">Save and Send</button>
+                                    <button type="button" class="btn btn-secondary rounded" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success rounded">Save</button>
+                                    <button type="button" class="btn btn-success rounded">Save and Send</button>
                                 </div>
                             </div>
                         </div>

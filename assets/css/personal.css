@@ -84,3 +84,17 @@
 	background-color: #B3B7BE;
 }
 
+.bg-ltgrey{
+	background-color: #DCDCDC;
+}
+
+
+/*MODAL*/
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}

@@ -8,6 +8,7 @@
     <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="assets/js/widgets.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>

@@ -118,6 +118,8 @@
 
 .dropdown-menu.show {
   display: block;
+  min-width: 100%;
+  margin-top: 40%;
 }
 
 // Dropdown section headers
